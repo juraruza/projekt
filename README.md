@@ -26,9 +26,9 @@ Php: pouze pokus neni jistý zda ho použiji.
 Verzování: Git + GitHub (repozitář dostupný vyučujícímu)
 
 ## Očekávaný přínos / co se naučím
-práce v javascriptu
-práce s JSON a strukturovanými daty
-načítání dat pomocí AJAX a dynamické vkládání obsahu
-tvorba responzivního designu
-základní formulářová komunikace se serverem
+práce v javascriptu,
+práce s JSON a strukturovanými daty,
+načítání dat pomocí AJAX a dynamické vkládání obsahu,
+tvorba responzivního designu,
+základní formulářová komunikace se serverem,
 organizace projektu ve složkách, verzování přes GitHub
