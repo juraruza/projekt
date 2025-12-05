@@ -1,0 +1,46 @@
+{
+  "vedlejsi_postavy": [
+    {
+      "id": 1,
+      "jmeno": "Ned Flanders",
+      "vek": "60",
+      "povolani": "Úředník farmaceutické společnosti",
+      "status": "Vdovec"
+    },
+    {
+      "id": 2,
+      "jmeno": "Moe Szyslak",
+      "vek": "62",
+      "povolani": "Majitel hospody Moe’s Tavern",
+      "status": "Svobodný"
+    },
+    {
+      "id": 3,
+      "jmeno": "Krusty the Clown",
+      "vek": "52",
+      "povolani": "Klaun a televizní moderátor",
+      "status": "Rozvedený"
+    },
+    {
+      "id": 4,
+      "jmeno": "Montgomery Burns",
+      "vek": "81-120+",
+      "povolani": "Majitel jaderné elektrárny",
+      "status": "Svobodný"
+    },
+    {
+      "id": 5,
+      "jmeno": "Chief Wiggum",
+      "vek": "43",
+      "povolani": "Policejní šéf Springfieldu",
+      "status": "Ženatý"
+    },
+    {
+      "id": 6,
+      "jmeno": "Milhouse Van Houten",
+      "vek": "10",
+      "povolani": "Žák základní školy",
+      "status": "Svobodný"
+    }
+  ]
+}

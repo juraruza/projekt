@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+
 header {
     background: #ffd90f;
     padding: 15px 0;
@@ -45,19 +46,26 @@ section {
     padding: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 
 .karta img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.karta h3 {
-    margin-top: 15px;
-    margin-bottom: 5px;
+
+.karta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
 }
 
+.karta:hover img {
+    transform: scale(1.05);
+}
 
 form {
     display: flex;
