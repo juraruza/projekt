@@ -103,3 +103,15 @@ footer {
     background: #f2f2f2;
     margin-top: 40px;
 }
+
+.fetch-error{
+    max-width: 1000px;
+    margin: 12px auto;
+    background: #fff4f4;
+    border: 1px solid #ffcccc;
+    color: #800;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.fetch-error button{ background:#ffd90f; border:none; padding:6px 10px; cursor:pointer; margin-top:8px }

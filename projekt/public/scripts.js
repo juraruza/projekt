@@ -67,9 +67,20 @@
     }
 
     async function loadJSON(path){
-        const res = await fetch(path);
-        if(!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-        return await res.json();
+        console.debug('[fetch] requesting', path);
+        const res = await fetch(path, {cache: 'no-cache'});
+        console.debug('[fetch] response', path, res.status, res.statusText);
+        if(!res.ok){
+            let body = '';
+            try{ body = await res.text(); }catch(e){ body = '<no body>'; }
+            throw new Error(`HTTP ${res.status} ${res.statusText} — ${body.slice(0,200)}`);
+        }
+        try{
+            return await res.json();
+        }catch(e){
+            const text = await res.text().catch(()=>'<unreadable>');
+            throw new Error('Invalid JSON: ' + e.message + ' — response text: ' + text.slice(0,200));
+        }
     }
 
     async function loadData(){
@@ -89,10 +100,20 @@
                 arrV.forEach(item => sideContainer.appendChild(createCard(item)));
             }
         }catch(e){
-            const msg = `Nepodařilo se načíst data přes fetch: ${e.message}. Spusť lokální HTTP server (např. 'python -m http.server' v kořenovém adresáři projektu) a otevři http://localhost:8000/public/index.html`;
-            if(mainContainer) mainContainer.innerHTML = `<p>${msg}</p>`;
-            if(sideContainer) sideContainer.innerHTML = `<p>${msg}</p>`;
+            const help = `Nepodařilo se načíst data přes fetch: ${e.message}.`;
+            const advice = `Spusť lokální HTTP server (např. 'python -m http.server' v kořenovém adresáři projektu) a otevři http://localhost:8000/public/index.html`;
+            const full = `${help} ${advice}`;
+            // zobrazíme přátelské chybové hlášení v horní části stránky
+            const errEl = document.getElementById('fetch-error');
+            if(errEl) errEl.innerHTML = `<strong>Chyba načítání dat</strong><p>${help}</p><p>${advice}</p><button id="retry-fetch">Zkusit znovu</button>`;
+            if(mainContainer) mainContainer.innerHTML = '';
+            if(sideContainer) sideContainer.innerHTML = '';
             console.error(e);
+            // retry tlačítko
+            setTimeout(()=>{
+                const btn = document.getElementById('retry-fetch');
+                if(btn) btn.addEventListener('click', ()=>{ if(errEl) errEl.textContent = 'Opakuji načítání...'; loadData(); });
+            },50);
         }
     }
 
