@@ -103,13 +103,13 @@
             const help = `Nepodařilo se načíst data přes fetch: ${e.message}.`;
             const advice = `Spusť lokální HTTP server (např. 'python -m http.server' v kořenovém adresáři projektu) a otevři http://localhost:8000/public/index.html`;
             const full = `${help} ${advice}`;
-            // zobrazíme přátelské chybové hlášení v horní části stránky
+            
             const errEl = document.getElementById('fetch-error');
             if(errEl) errEl.innerHTML = `<strong>Chyba načítání dat</strong><p>${help}</p><p>${advice}</p><button id="retry-fetch">Zkusit znovu</button>`;
             if(mainContainer) mainContainer.innerHTML = '';
             if(sideContainer) sideContainer.innerHTML = '';
             console.error(e);
-            // retry tlačítko
+           
             setTimeout(()=>{
                 const btn = document.getElementById('retry-fetch');
                 if(btn) btn.addEventListener('click', ()=>{ if(errEl) errEl.textContent = 'Opakuji načítání...'; loadData(); });
