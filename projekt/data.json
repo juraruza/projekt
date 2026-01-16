@@ -1,0 +1,159 @@
+{
+    "characters": [
+        {
+            "id": 2,
+            "name": "Homer Simpson",
+            "category": "main",
+            "description": "The clumsy but lovable father of the Simpson family, known for his love of donuts and beer.",
+            "image": ".\/img\/homer.jpg",
+            "votes": 2
+        },
+        {
+            "id": 1,
+            "name": "Marge Simpson",
+            "category": "main",
+            "description": "The patient and caring mother of the family.",
+            "image": ".\/img\/marge.jpg",
+            "votes": 0
+        },
+        {
+            "id": 2,
+            "name": "Bart Simpson",
+            "category": "main",
+            "description": "The mischievous son who loves skateboarding and pranks.",
+            "image": ".\/img\/bart.jpg",
+            "votes": 0
+        },
+        {
+            "id": 3,
+            "name": "Lisa Simpson",
+            "category": "main",
+            "description": "The intelligent and saxophone-playing daughter.",
+            "image": "\/img\/lisa.jpg",
+            "votes": 0
+        },
+        {
+            "id": 4,
+            "name": "Maggie Simpson",
+            "category": "main",
+            "description": "The baby of the family who communicates with her pacifier.",
+            "image": ".\/img\/maggie.jpg",
+            "votes": 1
+        },
+        {
+            "id": 5,
+            "name": "Ned Flanders",
+            "category": "side",
+            "description": "The friendly and religious neighbor.",
+            "image": ".\/img\/ned.jpg",
+            "votes": 0
+        },
+        {
+            "id": 6,
+            "name": "Moe Szyslak",
+            "category": "side",
+            "description": "The grumpy bartender at Moe's Tavern.",
+            "image": ".\/img\/moe.jpg",
+            "votes": 0
+        },
+        {
+            "id": 7,
+            "name": "Krusty the Clown",
+            "category": "side",
+            "description": "The clown who hosts children's TV shows.",
+            "image": ".\/img\/krusty.jpg",
+            "votes": 0
+        },
+        {
+            "id": 8,
+            "name": "Montgomery Burns",
+            "category": "side",
+            "description": "The evil and wealthy owner of the nuclear power plant.",
+            "image": ".\/img\/burns.jpg",
+            "votes": 0
+        },
+        {
+            "id": 9,
+            "name": "Chief Wiggum",
+            "category": "side",
+            "description": "The incompetent police chief of Springfield.",
+            "image": ".\/img\/wiggum.jpg",
+            "votes": 0
+        },
+        {
+            "id": 10,
+            "name": "Milhouse Van Houten",
+            "category": "side",
+            "description": "Bart's best friend and Lisa's secret admirer.",
+            "image": ".\/img\/milhouse.jpg",
+            "votes": 0
+        }
+    ],
+    "author": {
+        "name": "Jiří Růžička",
+        "email": "email@gmail.com",
+        "bio": "A passionate developer who loves creating fun web applications inspired by classic cartoons."
+    },
+    "messages": [
+        {
+            "timestamp": "2026-01-15 17:22:02",
+            "name": "fbd",
+            "email": "fgf@fe.com",
+            "message": "fdbdb"
+        },
+        {
+            "timestamp": "2026-01-15 17:22:04",
+            "name": "fbd",
+            "email": "fgf@fe.com",
+            "message": "fdbdb"
+        },
+        {
+            "timestamp": "2026-01-15 17:32:26",
+            "name": "fggnf",
+            "email": "fgf@fe.com",
+            "message": "gnfgnf"
+        },
+        {
+            "timestamp": "2026-01-15 17:33:03",
+            "name": "fggnf",
+            "email": "fgf@fe.com",
+            "message": "gnfgnf"
+        },
+        {
+            "timestamp": "2026-01-15 17:33:11",
+            "name": "h",
+            "email": "fgf@fe.com",
+            "message": "gfhj"
+        },
+        {
+            "timestamp": "2026-01-15 17:34:08",
+            "name": "dfgh",
+            "email": "fgf@fe.com",
+            "message": "db"
+        },
+        {
+            "timestamp": "2026-01-15 17:34:10",
+            "name": "dfgh",
+            "email": "fgf@fe.com",
+            "message": "db"
+        },
+        {
+            "timestamp": "2026-01-15 17:34:56",
+            "name": "dsg",
+            "email": "fgf@fe.com",
+            "message": "dfbhedf"
+        },
+        {
+            "timestamp": "2026-01-15 17:35:04",
+            "name": "dsg",
+            "email": "fgf@fe.com",
+            "message": "dfbhedf"
+        },
+        {
+            "timestamp": "2026-01-15 17:38:11",
+            "name": "fg",
+            "email": "fgf@fe.com",
+            "message": "gdfbnf"
+        }
+    ]
+}
